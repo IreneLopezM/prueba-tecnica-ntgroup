@@ -17,6 +17,9 @@ Este proyecto está desarrollado en:
 * MySQL
 * CSV
 
+#### Diagrama de la base de datos 
+![db](https://user-images.githubusercontent.com/107958147/228989460-9135016b-8d87-4ea7-bdd6-325a4f81b266.JPG)
+
 #### ¿Por qué los elegí?
 Elegí Python porque es el lenguaje que más domino y por el cual estoy aplicando a esta vacante.
 
@@ -35,6 +38,17 @@ El segundo reto fue que tuve que modificar el esquema para la información porqu
 Antes de ejecutar el código, debes de instalar lo siguiente:
 * [Python 3.8 64bits](https://www.python.org/downloads/)
 * [MySQL Server 8.0](https://dev.mysql.com/downloads/installer/)
+
+Una vez instalado MySQL debes crear un usuario con los siguientes datos:
+* user = "root"
+* password = "root"
+
+`CREATE USER 'root' @'localhost' IDENTIFIED BY 'root';`
+
+`GRANT ALL PRIVILEGES ON * . * TO 'root'@'localhost';`
+
+`FLUSH PRIVILEGES;`
+
 
 ### 1.3.	 Ejecución del proyecto en Windows
 El proyecto se encuentra dentro de la carpeta “seccion1”.
